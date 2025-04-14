@@ -1,0 +1,94 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Cricket Score Performance Indicator</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Cricket Score Performance Prediction</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">Writing Match_Id out of 1500</label>
+            <input class="form-control" type="number" name="Match_ID"
+                placeholder="Enter your Match_Id" min='1' max='1500' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Writing Overs out of 20</label>
+            <input class="form-control" type="number" name="Overs_Played"
+                placeholder="Enter Overs" min='0' max='20' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Writing Wickets_Lost out of 10</label>
+            <input class="form-control" type="number" name="Wickets_Lost"
+                placeholder="Enter Wickets_Lost" min='0' max='10' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Writing run rate out of 15</label>
+            <input class="form-control" type="number" name="Run_Rate"
+                placeholder="Enter Run rate" min='4' max='15' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Writing Opponent_Strength out of 10</label>
+            <input class="form-control" type="number" name="Opponent_Strength"
+                placeholder="Enter Opponent_Strength" min='1' max='10' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Home_Away</label>
+            <select class="form-control" name="Home_Away" placeholder="Select Home_Away" required>
+                <option class="placeholder" selected disabled value="">Select Home_Away</option>
+                <option value="Home">
+                    Home
+                </option>
+                <option value="Away">
+                    Away
+                </option>
+            </select>
+        </div>
+
+        <label class="form-label">Pitch_Condition</label>
+            <select class="form-control" name="Pitch_Condition" placeholder="Enter you Pitch_Condition" required>
+                <option class="placeholder" selected disabled value="">Select Pitch_Condition</option>
+                <option value="Bowling">
+                    Bowling
+                </option>
+                <option value="Balanced">
+                    Balanced
+                </option>
+                <option value="Batting">
+                    Batting
+                </option>
+                
+            </select>
+        </div>
+        <label class="form-label">Weather</label>
+            <select class="form-control" name="Weather" placeholder="Enter you weather_Condition" required>
+                <option class="placeholder" selected disabled value="">Select weather_Condition</option>
+                <option value="Sunny">
+                    Sunny
+                </option>
+                <option value="Cloudy">
+                    Cloudy
+                </option>
+                <option value="Overcast">
+                    Overcast
+                </option>
+                
+            </select>
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your predicted_score" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html>
+
+
+
+
+
+
+
+        

@@ -31,7 +31,7 @@ class DataTransformation:
         try:
             numerical_columns = ["Match_ID", "Overs_Played", "Wickets_Lost", "Run_Rate", "Opponent_Strength"]
             categorical_columns = [
-                "Home/Away", "Pitch_Condition", "Weather"
+                "Home_Away", "Pitch_Condition", "Weather"
             ]
 
             num_pipeline= Pipeline(

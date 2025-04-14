@@ -1,4 +1,4 @@
-Match_ID,Overs_Played,Wickets_Lost,Run_Rate,Home/Away,Opponent_Strength,Pitch_Condition,Weather,Predicted_Score
+Match_ID,Overs_Played,Wickets_Lost,Run_Rate,Home_Away,Opponent_Strength,Pitch_Condition,Weather,Predicted_Score
 1117,14,5,10.93,Home,10,Balanced,Overcast,144
 1369,8,10,11.11,Home,5,Bowling,Overcast,68
 423,1,5,14.17,Away,7,Bowling,Overcast,18

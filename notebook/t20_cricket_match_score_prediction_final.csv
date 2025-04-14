@@ -1,4 +1,4 @@
-Match_ID,Overs_Played,Wickets_Lost,Run_Rate,Home/Away,Opponent_Strength,Pitch_Condition,Weather,Predicted_Score
+Match_ID,Overs_Played,Wickets_Lost,Run_Rate,Home_Away,Opponent_Strength,Pitch_Condition,Weather,Predicted_Score
 1,7,1,11.04,Away,3,Bowling,Sunny,82
 2,20,10,11.87,Home,5,Bowling,Sunny,204
 3,15,7,6.14,Home,7,Balanced,Sunny,105
